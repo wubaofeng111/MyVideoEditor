@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6EE59562362A38B0093C7F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE59552362A38B0093C7F0 /* AppDelegate.m */; };
+		B6EE59582362A38D0093C7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6EE59572362A38D0093C7F0 /* Assets.xcassets */; };
+		B6EE595B2362A38D0093C7F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6EE59592362A38D0093C7F0 /* MainMenu.xib */; };
+		B6EE595E2362A38D0093C7F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE595D2362A38D0093C7F0 /* main.m */; };
+		B6EE596B2362A4DE0093C7F0 /* BFVideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE596A2362A4DE0093C7F0 /* BFVideoEditor.m */; };
+		B6EE596F2362D43E0093C7F0 /* BFCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE596D2362D43E0093C7F0 /* BFCollectionViewItem.m */; };
+		B6EE598C2362EFBE0093C7F0 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE598B2362EFBD0093C7F0 /* image.png */; };
+		B6EE598E2362F2190093C7F0 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE598D2362F2190093C7F0 /* image2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B6EE59512362A38B0093C7F0 /* MyVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EE59542362A38B0093C7F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6EE59552362A38B0093C7F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6EE59572362A38D0093C7F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6EE595A2362A38D0093C7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B6EE595C2362A38D0093C7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6EE595D2362A38D0093C7F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6EE595F2362A38D0093C7F0 /* MyVideoEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyVideoEditor.entitlements; sourceTree = "<group>"; };
+		B6EE59692362A4DE0093C7F0 /* BFVideoEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFVideoEditor.h; sourceTree = "<group>"; };
+		B6EE596A2362A4DE0093C7F0 /* BFVideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFVideoEditor.m; sourceTree = "<group>"; };
+		B6EE596C2362D43E0093C7F0 /* BFCollectionViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFCollectionViewItem.h; sourceTree = "<group>"; };
+		B6EE596D2362D43E0093C7F0 /* BFCollectionViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFCollectionViewItem.m; sourceTree = "<group>"; };
+		B6EE598B2362EFBD0093C7F0 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		B6EE598D2362F2190093C7F0 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6EE594E2362A38B0093C7F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6EE59482362A38B0093C7F0 = {
+			isa = PBXGroup;
+			children = (
+				B6EE59652362A3A40093C7F0 /* BFVideoEditor */,
+				B6EE59532362A38B0093C7F0 /* MyVideoEditor */,
+				B6EE59522362A38B0093C7F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6EE59522362A38B0093C7F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE59512362A38B0093C7F0 /* MyVideoEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6EE59532362A38B0093C7F0 /* MyVideoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE598B2362EFBD0093C7F0 /* image.png */,
+				B6EE598D2362F2190093C7F0 /* image2.png */,
+				B6EE59542362A38B0093C7F0 /* AppDelegate.h */,
+				B6EE59552362A38B0093C7F0 /* AppDelegate.m */,
+				B6EE59572362A38D0093C7F0 /* Assets.xcassets */,
+				B6EE59592362A38D0093C7F0 /* MainMenu.xib */,
+				B6EE595C2362A38D0093C7F0 /* Info.plist */,
+				B6EE595D2362A38D0093C7F0 /* main.m */,
+				B6EE595F2362A38D0093C7F0 /* MyVideoEditor.entitlements */,
+				B6EE596C2362D43E0093C7F0 /* BFCollectionViewItem.h */,
+				B6EE596D2362D43E0093C7F0 /* BFCollectionViewItem.m */,
+			);
+			path = MyVideoEditor;
+			sourceTree = "<group>";
+		};
+		B6EE59652362A3A40093C7F0 /* BFVideoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE59692362A4DE0093C7F0 /* BFVideoEditor.h */,
+				B6EE596A2362A4DE0093C7F0 /* BFVideoEditor.m */,
+			);
+			path = BFVideoEditor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6EE59502362A38B0093C7F0 /* MyVideoEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6EE59622362A38D0093C7F0 /* Build configuration list for PBXNativeTarget "MyVideoEditor" */;
+			buildPhases = (
+				B6EE594D2362A38B0093C7F0 /* Sources */,
+				B6EE594E2362A38B0093C7F0 /* Frameworks */,
+				B6EE594F2362A38B0093C7F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyVideoEditor;
+			productName = MyVideoEditor;
+			productReference = B6EE59512362A38B0093C7F0 /* MyVideoEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6EE59492362A38B0093C7F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = friday;
+				TargetAttributes = {
+					B6EE59502362A38B0093C7F0 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = B6EE594C2362A38B0093C7F0 /* Build configuration list for PBXProject "MyVideoEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6EE59482362A38B0093C7F0;
+			productRefGroup = B6EE59522362A38B0093C7F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6EE59502362A38B0093C7F0 /* MyVideoEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6EE594F2362A38B0093C7F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EE598E2362F2190093C7F0 /* image2.png in Resources */,
+				B6EE59582362A38D0093C7F0 /* Assets.xcassets in Resources */,
+				B6EE595B2362A38D0093C7F0 /* MainMenu.xib in Resources */,
+				B6EE598C2362EFBE0093C7F0 /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6EE594D2362A38B0093C7F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EE596B2362A4DE0093C7F0 /* BFVideoEditor.m in Sources */,
+				B6EE595E2362A38D0093C7F0 /* main.m in Sources */,
+				B6EE59562362A38B0093C7F0 /* AppDelegate.m in Sources */,
+				B6EE596F2362D43E0093C7F0 /* BFCollectionViewItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6EE59592362A38D0093C7F0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6EE595A2362A38D0093C7F0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6EE59602362A38D0093C7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B6EE59612362A38D0093C7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B6EE59632362A38D0093C7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyVideoEditor/MyVideoEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyVideoEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hudun.MyVideoEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6EE59642362A38D0093C7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyVideoEditor/MyVideoEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyVideoEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hudun.MyVideoEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6EE594C2362A38B0093C7F0 /* Build configuration list for PBXProject "MyVideoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6EE59602362A38D0093C7F0 /* Debug */,
+				B6EE59612362A38D0093C7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6EE59622362A38D0093C7F0 /* Build configuration list for PBXNativeTarget "MyVideoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6EE59632362A38D0093C7F0 /* Debug */,
+				B6EE59642362A38D0093C7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6EE59492362A38B0093C7F0 /* Project object */;
+}
