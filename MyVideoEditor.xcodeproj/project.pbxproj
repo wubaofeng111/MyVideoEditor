@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6370B3C2366CD6100F02B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6370B3B2366CD6100F02B70 /* Assets.xcassets */; };
+		B6370B472366CD7100F02B70 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6EE59592362A38D0093C7F0 /* MainMenu.xib */; };
+		B6370B492366CD8300F02B70 /* BFCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6EE5BD5236699E50093C7F0 /* BFCollectionViewItem.xib */; };
+		B6370B4D2366CDA300F02B70 /* BFVideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE596A2362A4DE0093C7F0 /* BFVideoEditor.m */; };
+		B6370B4E2366CDA300F02B70 /* VideoFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE5BD82366C3720093C7F0 /* VideoFileItem.m */; };
+		B6370B4F2366CDA300F02B70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE59552362A38B0093C7F0 /* AppDelegate.m */; };
+		B6370B502366CDA300F02B70 /* BFCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE596D2362D43E0093C7F0 /* BFCollectionViewItem.m */; };
+		B6370B512366CDED00F02B70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE595D2362A38D0093C7F0 /* main.m */; };
+		B6370B562366CF1300F02B70 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE598B2362EFBD0093C7F0 /* image.png */; };
+		B6370B572366CF1500F02B70 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE598D2362F2190093C7F0 /* image2.png */; };
+		B6370B592366D43B00F02B70 /* imgtag.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE5BDC2366CB820093C7F0 /* imgtag.png */; };
 		B6EE59562362A38B0093C7F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE59552362A38B0093C7F0 /* AppDelegate.m */; };
 		B6EE59582362A38D0093C7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6EE59572362A38D0093C7F0 /* Assets.xcassets */; };
 		B6EE595B2362A38D0093C7F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6EE59592362A38D0093C7F0 /* MainMenu.xib */; };
@@ -15,9 +26,16 @@
 		B6EE596F2362D43E0093C7F0 /* BFCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE596D2362D43E0093C7F0 /* BFCollectionViewItem.m */; };
 		B6EE598C2362EFBE0093C7F0 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE598B2362EFBD0093C7F0 /* image.png */; };
 		B6EE598E2362F2190093C7F0 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE598D2362F2190093C7F0 /* image2.png */; };
+		B6EE5BD6236699E50093C7F0 /* BFCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6EE5BD5236699E50093C7F0 /* BFCollectionViewItem.xib */; };
+		B6EE5BD92366C3720093C7F0 /* VideoFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE5BD82366C3720093C7F0 /* VideoFileItem.m */; };
+		B6EE5BDD2366CB820093C7F0 /* imgtag.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE5BDC2366CB820093C7F0 /* imgtag.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6370B362366CD6000F02B70 /* ABC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6370B3B2366CD6100F02B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6370B402366CD6100F02B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6370B432366CD6100F02B70 /* ABC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ABC.entitlements; sourceTree = "<group>"; };
 		B6EE59512362A38B0093C7F0 /* MyVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EE59542362A38B0093C7F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6EE59552362A38B0093C7F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -25,16 +43,26 @@
 		B6EE595A2362A38D0093C7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B6EE595C2362A38D0093C7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6EE595D2362A38D0093C7F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6EE595F2362A38D0093C7F0 /* MyVideoEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyVideoEditor.entitlements; sourceTree = "<group>"; };
 		B6EE59692362A4DE0093C7F0 /* BFVideoEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFVideoEditor.h; sourceTree = "<group>"; };
 		B6EE596A2362A4DE0093C7F0 /* BFVideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFVideoEditor.m; sourceTree = "<group>"; };
 		B6EE596C2362D43E0093C7F0 /* BFCollectionViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFCollectionViewItem.h; sourceTree = "<group>"; };
 		B6EE596D2362D43E0093C7F0 /* BFCollectionViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFCollectionViewItem.m; sourceTree = "<group>"; };
 		B6EE598B2362EFBD0093C7F0 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		B6EE598D2362F2190093C7F0 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		B6EE5BD5236699E50093C7F0 /* BFCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BFCollectionViewItem.xib; sourceTree = "<group>"; };
+		B6EE5BD72366C3720093C7F0 /* VideoFileItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoFileItem.h; sourceTree = "<group>"; };
+		B6EE5BD82366C3720093C7F0 /* VideoFileItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoFileItem.m; sourceTree = "<group>"; };
+		B6EE5BDC2366CB820093C7F0 /* imgtag.png */ = {isa = PBXFileReference; explicitFileType = text.html; path = imgtag.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6370B332366CD6000F02B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6EE594E2362A38B0093C7F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,11 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6370B372366CD6000F02B70 /* ABC */ = {
+			isa = PBXGroup;
+			children = (
+				B6370B3B2366CD6100F02B70 /* Assets.xcassets */,
+				B6370B402366CD6100F02B70 /* Info.plist */,
+				B6370B432366CD6100F02B70 /* ABC.entitlements */,
+			);
+			path = ABC;
+			sourceTree = "<group>";
+		};
 		B6EE59482362A38B0093C7F0 = {
 			isa = PBXGroup;
 			children = (
 				B6EE59652362A3A40093C7F0 /* BFVideoEditor */,
 				B6EE59532362A38B0093C7F0 /* MyVideoEditor */,
+				B6370B372366CD6000F02B70 /* ABC */,
 				B6EE59522362A38B0093C7F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B6EE59512362A38B0093C7F0 /* MyVideoEditor.app */,
+				B6370B362366CD6000F02B70 /* ABC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +105,7 @@
 		B6EE59532362A38B0093C7F0 /* MyVideoEditor */ = {
 			isa = PBXGroup;
 			children = (
+				B6EE5BDC2366CB820093C7F0 /* imgtag.png */,
 				B6EE598B2362EFBD0093C7F0 /* image.png */,
 				B6EE598D2362F2190093C7F0 /* image2.png */,
 				B6EE59542362A38B0093C7F0 /* AppDelegate.h */,
@@ -73,9 +114,9 @@
 				B6EE59592362A38D0093C7F0 /* MainMenu.xib */,
 				B6EE595C2362A38D0093C7F0 /* Info.plist */,
 				B6EE595D2362A38D0093C7F0 /* main.m */,
-				B6EE595F2362A38D0093C7F0 /* MyVideoEditor.entitlements */,
 				B6EE596C2362D43E0093C7F0 /* BFCollectionViewItem.h */,
 				B6EE596D2362D43E0093C7F0 /* BFCollectionViewItem.m */,
+				B6EE5BD5236699E50093C7F0 /* BFCollectionViewItem.xib */,
 			);
 			path = MyVideoEditor;
 			sourceTree = "<group>";
@@ -85,6 +126,8 @@
 			children = (
 				B6EE59692362A4DE0093C7F0 /* BFVideoEditor.h */,
 				B6EE596A2362A4DE0093C7F0 /* BFVideoEditor.m */,
+				B6EE5BD72366C3720093C7F0 /* VideoFileItem.h */,
+				B6EE5BD82366C3720093C7F0 /* VideoFileItem.m */,
 			);
 			path = BFVideoEditor;
 			sourceTree = "<group>";
@@ -92,6 +135,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B6370B352366CD6000F02B70 /* ABC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6370B442366CD6100F02B70 /* Build configuration list for PBXNativeTarget "ABC" */;
+			buildPhases = (
+				B6370B322366CD6000F02B70 /* Sources */,
+				B6370B332366CD6000F02B70 /* Frameworks */,
+				B6370B342366CD6000F02B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ABC;
+			productName = ABC;
+			productReference = B6370B362366CD6000F02B70 /* ABC.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B6EE59502362A38B0093C7F0 /* MyVideoEditor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6EE59622362A38D0093C7F0 /* Build configuration list for PBXNativeTarget "MyVideoEditor" */;
@@ -118,6 +178,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = friday;
 				TargetAttributes = {
+					B6370B352366CD6000F02B70 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					B6EE59502362A38B0093C7F0 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -137,11 +200,25 @@
 			projectRoot = "";
 			targets = (
 				B6EE59502362A38B0093C7F0 /* MyVideoEditor */,
+				B6370B352366CD6000F02B70 /* ABC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B6370B342366CD6000F02B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6370B3C2366CD6100F02B70 /* Assets.xcassets in Resources */,
+				B6370B572366CF1500F02B70 /* image2.png in Resources */,
+				B6370B592366D43B00F02B70 /* imgtag.png in Resources */,
+				B6370B472366CD7100F02B70 /* MainMenu.xib in Resources */,
+				B6370B492366CD8300F02B70 /* BFCollectionViewItem.xib in Resources */,
+				B6370B562366CF1300F02B70 /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6EE594F2362A38B0093C7F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,18 +227,33 @@
 				B6EE59582362A38D0093C7F0 /* Assets.xcassets in Resources */,
 				B6EE595B2362A38D0093C7F0 /* MainMenu.xib in Resources */,
 				B6EE598C2362EFBE0093C7F0 /* image.png in Resources */,
+				B6EE5BDD2366CB820093C7F0 /* imgtag.png in Resources */,
+				B6EE5BD6236699E50093C7F0 /* BFCollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B6370B322366CD6000F02B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6370B512366CDED00F02B70 /* main.m in Sources */,
+				B6370B4F2366CDA300F02B70 /* AppDelegate.m in Sources */,
+				B6370B502366CDA300F02B70 /* BFCollectionViewItem.m in Sources */,
+				B6370B4E2366CDA300F02B70 /* VideoFileItem.m in Sources */,
+				B6370B4D2366CDA300F02B70 /* BFVideoEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6EE594D2362A38B0093C7F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B6EE596B2362A4DE0093C7F0 /* BFVideoEditor.m in Sources */,
 				B6EE595E2362A38D0093C7F0 /* main.m in Sources */,
+				B6EE5BD92366C3720093C7F0 /* VideoFileItem.m in Sources */,
 				B6EE59562362A38B0093C7F0 /* AppDelegate.m in Sources */,
 				B6EE596F2362D43E0093C7F0 /* BFCollectionViewItem.m in Sources */,
 			);
@@ -181,6 +273,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B6370B452366CD6100F02B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ABC/ABC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ABC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hudun.ABC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6370B462366CD6100F02B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ABC/ABC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ABC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hudun.ABC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B6EE59602362A38D0093C7F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -296,9 +422,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyVideoEditor/MyVideoEditor.entitlements;
+				CODE_SIGN_ENTITLEMENTS = /Users/friday/Documents/KodeLife/plist/MyVideoEditor/ABC/ABC.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RSYK3DQ2EY;
 				INFOPLIST_FILE = MyVideoEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hudun.MyVideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -313,9 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyVideoEditor/MyVideoEditor.entitlements;
+				CODE_SIGN_ENTITLEMENTS = /Users/friday/Documents/KodeLife/plist/MyVideoEditor/ABC/ABC.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RSYK3DQ2EY;
 				INFOPLIST_FILE = MyVideoEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,12 +454,22 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hudun.MyVideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B6370B442366CD6100F02B70 /* Build configuration list for PBXNativeTarget "ABC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6370B452366CD6100F02B70 /* Debug */,
+				B6370B462366CD6100F02B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6EE594C2362A38B0093C7F0 /* Build configuration list for PBXProject "MyVideoEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

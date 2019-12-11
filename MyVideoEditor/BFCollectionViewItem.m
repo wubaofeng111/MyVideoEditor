@@ -17,6 +17,7 @@
 {
     if (self = [super init]) {
         _mImageView = [[NSImageView alloc]init];
+        
     }
     return self;
 }
@@ -56,8 +57,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    
+    _mImageView = [[NSImageView alloc]init];
+    _mPTagView  = [[NSImageView alloc]init];
+    _mPTagView.image = [NSImage imageNamed:@"imgtag.png"];
+    _mPTagView.hidden = YES;
     [self.view addSubview:_mImageView];
+    [self.view addSubview:_mPTagView];
     
     
 }
@@ -66,6 +71,7 @@
 {
     [super viewWillLayout];
     _mImageView.frame = self.view.bounds;
+    _mPTagView.frame  = self.view.bounds;
 }
 
 @end

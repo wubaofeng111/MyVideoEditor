@@ -8,6 +8,7 @@
 
 #import "BFVideoEditor.h"
 #import <Cocoa/Cocoa.h>
+#import "VideoFileItem.h"
 
 @implementation BFVideoEditor
 
@@ -17,6 +18,7 @@
     if(self = [super init])
     {
         [self CreateMainTrack];
+        _pFiles = [[NSMutableArray alloc]init];
         
     }
     return self;
@@ -109,6 +111,23 @@
     }];
 }
 
+-(void)InsertNewVideoPath:(NSString *)newVideo BeforeIndex:(NSInteger)index
+{
+    VideoFileItem *item = [_pFiles objectAtIndex:index];
+    
+    if (index == 0) {
+        [self InsertNewVideoPath:newVideo AtCMTime:kCMTimeZero];
+    }
+    
+    
+}
+
+-(void)InsertNewVideoPath:(NSString *)newVideo BehindIndex:(NSInteger)index
+{
+    
+}
+
+
 -(void)InsertNewVideoPath:(NSString *)newVideo AtTime:(CGFloat)cmtime
 {
     CMTime time = CMTimeMake(cmtime, 1);
@@ -117,7 +136,15 @@
 
 -(void)InsertNewVideoPath:(NSString *)newVideo AtCMTime:(CMTime)cmtime
 {
+    
     AVAsset *set = [[AVURLAsset alloc]initWithURL:[NSURL fileURLWithPath:newVideo] options:nil];
+    
+    VideoFileItem *item = [[VideoFileItem alloc]init];
+    item.pAVAsset = set;
+    item.startTime = cmtime;
+    item.endTime   = CMTimeAdd(cmtime, set.duration);
+    [_pFiles addObject:item];
+    
     if ([[set tracksWithMediaType:AVMediaTypeAudio] count] != 0) {
         AVAssetTrack*audioTrack = [set tracksWithMediaType:AVMediaTypeAudio][0];
         [pMainAudioAVMutableCompositionTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero,set.duration) ofTrack:audioTrack atTime:cmtime error:nil];

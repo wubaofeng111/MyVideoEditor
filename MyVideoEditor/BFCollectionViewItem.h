@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BFCollectionViewItem : NSCollectionViewItem<NSCollectionViewElement>
 @property (strong) IBOutlet NSImageView *mImageView;
+@property (strong) IBOutlet NSImageView *mPTagView;
 
 @end
 

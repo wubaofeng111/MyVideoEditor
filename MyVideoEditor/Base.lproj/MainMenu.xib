@@ -11,12 +11,12 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="mProgress" destination="fbb-ca-qH1" id="GfW-wh-Xd6"/>
                 <outlet property="mView" destination="jjY-Ku-Q9q" id="vse-Rm-hns"/>
-                <outlet property="pNSCollectionView" destination="QDL-iL-GqR" id="AnA-Ql-pPv"/>
+                <outlet property="pNSCollectionView" destination="GSr-P0-8b9" id="acE-OZ-pqp"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -681,7 +681,7 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="9" y="-564"/>
+            <point key="canvasLocation" x="-418" y="-688"/>
         </menu>
         <window title="MyVideoEditor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
@@ -690,7 +690,7 @@
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="741" height="704"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUa-fq-Eh9">
                         <rect key="frame" x="0.0" y="0.0" width="334" height="96"/>
@@ -831,33 +831,83 @@
                             <constraint firstAttribute="height" constant="500" id="w1q-bY-6Ht"/>
                         </constraints>
                     </customView>
-                    <collectionView identifier="pBFCollectionViewItemIdentifier" translatesAutoresizingMaskIntoConstraints="NO" id="QDL-iL-GqR">
-                        <rect key="frame" x="0.0" y="108" width="580" height="96"/>
+                    <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTA-IZ-svA">
+                        <rect key="frame" x="60" y="97" width="621" height="100"/>
+                        <clipView key="contentView" id="f9u-rO-zqH">
+                            <rect key="frame" x="1" y="1" width="619" height="98"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <collectionView id="GSr-P0-8b9">
+                                    <rect key="frame" x="0.0" y="0.0" width="619" height="98"/>
+                                    <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" scrollDirection="horizontal" id="1os-es-MkK">
+                                        <size key="itemSize" width="50" height="50"/>
+                                    </collectionViewFlowLayout>
+                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="Voe-Tx-rLC" id="sKD-aX-ei4"/>
+                                        <outlet property="delegate" destination="Voe-Tx-rLC" id="GcR-4e-PQ8"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </clipView>
                         <constraints>
-                            <constraint firstAttribute="width" constant="580" id="Zsk-Xw-joC"/>
-                            <constraint firstAttribute="height" constant="96" id="cUL-tQ-6cB"/>
+                            <constraint firstAttribute="height" constant="100" id="b0g-J3-hj0"/>
                         </constraints>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" scrollDirection="horizontal" sectionHeadersPinToVisibleBounds="YES" sectionFootersPinToVisibleBounds="YES" id="5oz-7L-0DZ">
-                            <size key="itemSize" width="50" height="50"/>
-                        </collectionViewFlowLayout>
-                        <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="ih0-aH-bqx">
+                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="7Mj-04-6lq">
+                            <rect key="frame" x="-100" y="-100" width="15" height="98"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-Oa-jY2">
+                        <rect key="frame" x="-6" y="130" width="75" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="63" id="hp9-Yh-JqS"/>
+                            <constraint firstAttribute="height" constant="21" id="m25-kE-MwZ"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="insert" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xn2-qs-3VS">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
                         <connections>
-                            <outlet property="dataSource" destination="Voe-Tx-rLC" id="P2F-Uj-8pv"/>
-                            <outlet property="delegate" destination="Voe-Tx-rLC" id="Hzs-Ax-rdw"/>
+                            <action selector="insertFront:" target="Voe-Tx-rLC" id="rmy-XQ-r60"/>
                         </connections>
-                    </collectionView>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bxx-50-OGO">
+                        <rect key="frame" x="672" y="130" width="75" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="AiA-ga-y0B"/>
+                            <constraint firstAttribute="width" constant="63" id="MUd-It-6g6"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="insert" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z6g-9y-RnG">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="insertBack:" target="Voe-Tx-rLC" id="dx5-BJ-ISn"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="gUa-fq-Eh9" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="0fl-V1-a6w"/>
-                    <constraint firstItem="QDL-iL-GqR" firstAttribute="top" secondItem="jjY-Ku-Q9q" secondAttribute="bottom" id="2Yb-vn-il4"/>
-                    <constraint firstItem="QDL-iL-GqR" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="FDT-DC-85n"/>
+                    <constraint firstAttribute="trailing" secondItem="Bxx-50-OGO" secondAttribute="trailing" id="4k5-N3-BFu"/>
+                    <constraint firstItem="XDF-Oa-jY2" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="CL4-BY-wnk"/>
                     <constraint firstItem="jjY-Ku-Q9q" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="NdI-ot-5nt"/>
+                    <constraint firstItem="aTA-IZ-svA" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="60" id="gTn-Jp-y9S"/>
                     <constraint firstAttribute="trailing" secondItem="jjY-Ku-Q9q" secondAttribute="trailing" id="hru-jT-ssm"/>
                     <constraint firstItem="jjY-Ku-Q9q" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="jeC-fh-SY6"/>
+                    <constraint firstAttribute="trailing" secondItem="aTA-IZ-svA" secondAttribute="trailing" constant="60" id="rRD-Zs-jPb"/>
+                    <constraint firstItem="gUa-fq-Eh9" firstAttribute="top" secondItem="aTA-IZ-svA" secondAttribute="bottom" constant="1" id="u7U-fI-jIt"/>
                     <constraint firstAttribute="bottom" secondItem="gUa-fq-Eh9" secondAttribute="bottom" id="uXW-Ki-kCQ"/>
+                    <constraint firstItem="XDF-Oa-jY2" firstAttribute="centerY" secondItem="GSr-P0-8b9" secondAttribute="centerY" id="vrB-lR-0Mb"/>
+                    <constraint firstItem="Bxx-50-OGO" firstAttribute="centerY" secondItem="GSr-P0-8b9" secondAttribute="centerY" id="zG5-QA-Qui"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="-246.5" y="-163"/>
+            <point key="canvasLocation" x="-283" y="-249"/>
         </window>
     </objects>
 </document>

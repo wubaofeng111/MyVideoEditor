@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
     
     CGSize mainSize;
 }
+@property(nonatomic,strong)NSMutableArray *pFiles;
 @property(nonatomic,weak)id<BFVideoPlayViewCallBack> delegate;
 @property(nonatomic,readonly)AVPlayerLayer *layer;
 
@@ -44,10 +45,14 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)Play;
 
 -(void)SeekToValue:(CGFloat)value;
-
+-(void)InsertNewVideoPath:(NSString*)newVideo BeforeIndex:(NSInteger)index;
+-(void)InsertNewVideoPath:(NSString*)newVideo BehindIndex:(NSInteger)index;
 -(void)InsertNewVideoPath:(NSString*)newVideo AtCMTime:(CMTime)cmtime;
 -(void)InsertNewVideoPath:(NSString*)newVideo AtTime:(CGFloat)cmtime;
 -(void)AddWaterWithImagePath:(NSString*)imagePath;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

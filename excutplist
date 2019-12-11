@@ -1,0 +1,12 @@
+ProcessInfoPlistFile /Volumes/Extern/Build/MyVideoEditor-ccpqqgztqrwgxecgdmappijctayr/Build/Products/Debug/MyVideoEditor.app/Contents/Info.plist /Users/friday/Documents/KodeLife/plist/MyVideoEditor/MyVideoEditor/Info.plist (in target: MyVideoEditor)
+    cd /Users/friday/Documents/KodeLife/plist/MyVideoEditor
+    builtin-infoPlistUtility /Users/friday/Documents/KodeLife/plist/MyVideoEditor/MyVideoEditor/Info.plist 
+    -producttype com.apple.product-type.application -genpkginfo 
+    /Volumes/Extern/Build/MyVideoEditor-ccpqqgztqrwgxecgdmappijctayr/Build/Products/Debug/MyVideoEditor.app/Contents/PkgInfo 
+    -expandbuildsettings -platform macosx -additionalcontentfile 
+    /Volumes//Debug/MyVideoEditor.build/Base.lproj/MainMenu-PartialInfo.plist 
+    -additionalcontentfile 
+    /Volumes/Extern/Build/MyVideoEditor-ccpqqgztqrwgxecgdmappijctayr/BuildideoEditor.build/BFCollectionViewItem-PartialInfo.plist 
+    -additionalcontentfile 
+    /Volumes/Extmediates.noindex/MyVideoEditor.build/Debug/MyVideoEditor.build/assetcatalog_generated_info.plist 
+    -o /Volumes/Extern/Build/-/Build/Products/Debug/MyVideoEditor.app/Contents/Info.plist
